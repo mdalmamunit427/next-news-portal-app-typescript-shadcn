@@ -16,6 +16,11 @@ import { usePathname } from "next/navigation";
 import { ThemeContext } from "@/context/themeContext";
 import { useContext } from "react";
 
+interface ThemeContextType {
+  isDarkMode: boolean;
+  toggleTheme: () => void;
+}
+
 const Navbar = () => {
 
   const pathname = usePathname()
